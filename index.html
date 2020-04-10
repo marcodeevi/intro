@@ -1,1 +1,45 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-us">
+  <script>
+   function openPage(url) {
+      var win = window.open(url, '_blank');
+      win.focus();
+    }
+    </script>
+  <head>
+    <title>MarcoDeevil - Game Dev</title>
+    <link href="style.css" rel="stylesheet" type="text/css">  
+  </head>
+  <body class="content">
+    <header class="container">
+      <h1>MarcoDeevil - Unity Game Developer</h1>
+    </header>  
+    <div class="content">
+     <h1 align="center">About me</h1>
+     <h4 align="center">22 yo student from Poland, passionate about games. I love creativity and flexibility in developing</h4>
+    </br>
+    </div>
+    <div class="content">
+      <h1 align="center">My Projetcs</h1>  
+      <ul>
+        <li onclick="openPage('neonshooter.html')">
+          <img src="img/neonshooter.png"/>
+          <h3>NeonShooter</h3>
+          <p>2D up-down shooter</p>
+        </li>      
+        <li onclick="openPage('drawbuild.html')">
+          <img src="img/drawbuild.png" />
+          <h3>DrawBuild</h3>
+          <p>3d sketched, hobby model</p>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1 align="center">Contact</h1>
+    </div>
+    <div class="container"><img onclick="openPage('https://github.com/MarcoDeevil')" class="ikona" src="img/github.png" /></div>
+  </body>
+  <footer class="container">
+    <h6>@2020 MarcoDeevil</h6>
+  </footer>
+</html>
