@@ -67,3 +67,59 @@ li:hover {
   background: rgb(113, 74, 155);
   cursor: pointer;
 }
+
+canvas {
+    border: 2px solid black;
+    display: inline;
+}
+
+#canvas {
+    width: 100%;
+    text-align: center;
+}
+
+html {
+    background: #1e272e;
+}
+
+.endingScreenBackground {
+    background-color: #353b48;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 54px;
+}
+
+.endingQuote {
+    color: #000;
+    height: 750px;
+    width: 950px;
+    margin: auto;
+    margin-top: -105px;
+    background: url("https://i.postimg.cc/TP6pMbrp/Pngtree-cartoon-style-rain-cloud-5052930.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 95px;
+    padding-left: 25px;
+}
+
+.quoteText {
+    padding-top: 200px;
+    font-size: 54px;
+    font-family: 'Caveat', cursive;
+    color: #C4E538;
+    letter-spacing: 4.5px;
+    width: 650px;
+    font-weight: 800;
+    margin: auto;
+    margin-top: -165px;
+}
+
+.endingScreenBackground>h1 {
+    color: #c23616;
+}
