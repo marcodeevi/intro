@@ -1,7 +1,7 @@
 body{
-    background: rgb(255, 255, 255);
+    background-color: #603F83FF;
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-    color:rgb(0, 0, 0);
+    color:#C7D3D4FF;
     height: 100%;
   }
 
@@ -37,7 +37,8 @@ ul {
 }
  
 h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold 24px/1.5 Helvetica, Verdana, sans-serif;
+  color: rgb(181, 202, 204);
 }
 
 .ikona {
@@ -52,15 +53,17 @@ li img {
 }
  
 li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+  font: 200 16px/1.5 Georgia, Times New Roman, serif;
+  color: #C7D3D4FF;
 }
  
 li {
+  background-color: #603F83FF;
   padding: 10px;
   overflow: auto;
 }
  
 li:hover {
-  background: #eee;
+  background: rgb(113, 74, 155);
   cursor: pointer;
 }
