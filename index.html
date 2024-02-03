@@ -1,82 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <canvas id='dungeon' width='1400px' height='720px' style='border:1px solid grey'></canvas>
-  <script>
-   function openPage(url) {
-      var win = window.open(url, '_blank');
-      win.focus();
-    }
-    </script>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>MarcoDeevil - Game Dev</title>
-    <link href="style.css" rel="stylesheet" type="text/css">  
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte</title>
   </head>
-  <body class="content">
-    <header class="container">
-      <h1>MarcoDeevil - Unity Game Developer</h1>
-    </header>  
-    <div class="content">
-     <h1 align="center">About me</h1>
-     <h4 align="center">22 yo computer science student, passionate in making games, more games, demos soon</h4>
-    </br>
-    </div>
-    <div class="content">
-      <h1 align="center">PAGE IS UNDER CONSTRUCTION</h1>  
-      <br/>
-      <br/>
-      <br/>
-      <ul>
-        <li onclick="openPage('subject.html')">
-          <img src="img/lol.png" />
-          <h3>Subject</h3>
-          <p>2D turn - platform Game Demo. You need to create commands for your block to help him finish the level in one take.
-          </p>
-        </li>
-        <br/>
-        <li onclick="openPage('pandachilll.html')">
-          <img height="128" width="128" src="img/pandaa.png" />
-          <h3>PocketPanda</h3>
-          <p>2D "clicker game". You feed Panda to get points, you can also play
-            mini-games to obtain them. For points you can buy better hat for your Panda.
-            There is authentication system built with Firebase and all the game status is being
-            saved to the Firebase database, so your progress is saved.
-          </p>
-        </li>
-        <br/>
-        <li onclick="openPage('drawbuild.html')">
-          <img src="img/drawbuild.png" />
-          <h3>SketchyBuildings</h3>
-          <p>That's more like a concept of 3D sketched model game. I think the idea and results are
-            very interesting and i will sure play with this in the future. It could be first person
-            detective style game or maybe more RTS, strategic game with buildings in this style
-          </p>
-        </li>
-        <br/>
-        <li onclick="openPage('escape.html')">
-          <img src="img/player2.png" />
-          <h3>HardHardHard</h3>
-          <p>2D skillful, little rng game with simple mechanic, sometimes addictive.
-            Game was made for fun, for friends to compete together. It was made in few hours.
-          </p>
-        </li>
-        <br/>  
-        <li onclick="openPage('ld50.html')">
-          <img src="img/stick.png" />
-          <h3>Ludum dare 50</h3>
-          <p>Life can be owerhmeling
-          </p>
-        </li>
-        <br/> 
-      </ul>
-    </div>
-    <div class="content">
-      <h1 align="center">Contact</h1>
-      <p align="center">krzysaaa7@gmail.com</p>
-    </div>
-    <div class="container"><img onclick="openPage('https://github.com/MarcoDeevil')" class="ikona" src="img/github.png" /></div>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
-  <footer class="container">
-    <h6>@2020 MarcoDeevil</h6>
-    <br>
-  </footer>
 </html>
