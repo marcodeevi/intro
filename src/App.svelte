@@ -2,8 +2,8 @@
   import Game from './lib/Game.svelte';
   import { fly, fade } from 'svelte/transition'
 
-  let jamsVisible = true;
-  let prototypesVisible = true;
+  let jamsVisible = false;
+  let prototypesVisible = false;
 
   let jams = [
     {
