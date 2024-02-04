@@ -71,7 +71,7 @@
         <h1>Jams</h1>
       </button>
       {#if jamsVisible}
-      <p>worked on these with my dear friend <a href="https://github.com/kamilzygowski">swedishsailor</a></p>
+      <p>worked on these with my dear friend <a href="https://github.com/kamilzygowski" target="_blank">swedishsailor</a></p>
       <games in:fly={{ y: -20, duration: 1000 }} out:fly={{ y: -20, duration: 1000 }}>
         {#each jams as game}
           <Game title={game.title} src={game.src} description={game.description} href={game.href} />
