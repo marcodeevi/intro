@@ -24,7 +24,7 @@
     {
       title: 'Subject',
       src: 'images/subject-cropped.png',
-      description: 'Short, logigal',
+      description: 'Short, logical',
       href: 'https://marcodeevil.itch.io/subject'
     },
     {
