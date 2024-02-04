@@ -27,8 +27,8 @@
     }
 
     img {
-        width: 315px;
-        height: 250px;
+        width: 500px;
+        height: 100px;
         object-fit: cover;
         margin-bottom: 10px;
         margin-top: 10px;

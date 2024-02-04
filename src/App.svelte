@@ -2,21 +2,42 @@
   import Game from './lib/Game.svelte';
   import { fly, fade } from 'svelte/transition'
 
-  let gameJamsVisible = true;
-  let otherVisible = true;
+  let jamsVisible = true;
+  let prototypesVisible = true;
 
-  let games = [
+  let jams = [
     {
-      title: 'Melody of the Wild',
-      src: 'images/melody-of-the-wild.png',
+      title: 'Melody of the Wild - LD54',
+      src: 'images/panda-banjo-cropped.jpg',
       description: 'Panda, banjo, campfire.',
       href: 'https://marcodeevil.itch.io/melody-of-the-wild'
     },
     {
-      title: 'Do Not Open the Letter',
-      src: 'images/do-not-open-the-letter.png',
+      title: 'Do Not Open the Letter - LD53',
+      src: 'images/do-not-open-the-letter-cropped.png',
       description: 'Do not open the letter.',
       href: 'https://marcodeevil.itch.io/do-not-open-the-letter'
+    },
+  ];
+
+  let prototypes = [
+    {
+      title: 'Subject',
+      src: 'images/subject-cropped.png',
+      description: 'Short, logigal',
+      href: 'https://marcodeevil.itch.io/subject'
+    },
+    {
+      title: 'Broken Dreams',
+      src: 'images/broken-dreams-cropped.png',
+      description: 'For now just an artistic concept...',
+      href: 'https://marcodeevil.itch.io/broken-dreams'
+    },
+    {
+      title: 'Hard Game',
+      src: 'images/hard-cropped.png',
+      description: 'Just a hard game',
+      href: 'https://marcodeevil.itch.io/hard-game'
     },
   ];
 
@@ -26,9 +47,9 @@
   <intro>
     <p style="margin-right: 30px;">
       the incomplete works of marcodeevil<br>
-      lifelong maker of games<br> 
+      lifelong maker of games and stuff<br> 
       trying to have some fun in life<br>
-      member of <a href="https://whitespacestudio.dev/" target="_blank">white space studio</a>
+      bigger projects probably here: <a href="https://whitespacestudio.dev/" target="_blank">white space studio</a>
     </p>
     <socials>
       <a href="https://marcodeevil.itch.io/" target="_blank">
@@ -46,13 +67,27 @@
 
   <projects>
     <project>
-      <button class="text-button" on:click={() => gameJamsVisible = !gameJamsVisible}>
-        <h1>Games</h1>
+      <button class="text-button" on:click={() => jamsVisible = !jamsVisible}>
+        <h1>Jams</h1>
       </button>
-      {#if gameJamsVisible}
+      {#if jamsVisible}
+      <p>worked on these with my dear friend <a href="https://github.com/kamilzygowski">swedishsailor</a></p>
       <games in:fly={{ y: -20, duration: 1000 }} out:fly={{ y: -20, duration: 1000 }}>
-        {#each games as game}
+        {#each jams as game}
           <Game title={game.title} src={game.src} description={game.description} href={game.href} />
+        {/each}
+      </games>
+      {/if}
+    </project>
+    <project>
+      <button class="text-button" on:click={() => prototypesVisible = !prototypesVisible}>
+        <h1>Prototypes</h1>
+      </button>
+      {#if prototypesVisible}
+      <p>in no particular order</p>
+      <games in:fly={{ y: -20, duration: 1000 }} out:fly={{ y: -20, duration: 1000 }}>
+        {#each prototypes as prototype}
+          <Game title={prototype.title} src={prototype.src} description={prototype.description} href={prototype.href} />
         {/each}
       </games>
       {/if}
@@ -103,6 +138,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    min-width: 550px;
   }
 
   projects {
@@ -111,6 +147,9 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
+    margin: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
   games {
