@@ -58,9 +58,6 @@
       <a href="https://github.com/MarcoDeevil" target="_blank">
         <img src="images/github-mark.png" alt="GitHub" />
       </a>
-      <a href="https://www.youtube.com/channel/UCFA3P8qksukQXnrjRP-ENSw" target="_blank">
-        <img src="images/yt.png" alt="YouTube" />
-      </a>
     </socials>
   </intro>
 
