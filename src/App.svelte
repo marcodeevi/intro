@@ -13,6 +13,12 @@
       href: 'https://marcodeevil.itch.io/melody-of-the-wild'
     },
     {
+      title: 'Word Exorcist - LD55',
+      src: 'images/word-exorcist-cropped.png',
+      description: 'Not so cute typing game.',
+      href: 'https://marcodeevil.itch.io/word-exorcist'
+    },
+    {
       title: 'Do Not Open the Letter - LD53',
       src: 'images/do-not-open-the-letter-cropped.png',
       description: 'Do not open the letter.',
