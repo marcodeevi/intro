@@ -52,7 +52,7 @@
 <div id="container">
   <intro>
     <p style="margin-right: 30px;">
-      the incomplete works of marcodeevil<br>
+      the incomplete works of marcodeevi<br>
       lifelong maker of games and stuff<br> 
       trying to have some fun in life<br>
       bigger projects probably here: <a href="https://whitespacestudio.dev/" target="_blank">white space studio</a>
@@ -61,7 +61,7 @@
       <a href="https://marcodeevil.itch.io/" target="_blank">
         <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="Twitter" />
       </a>
-      <a href="https://github.com/MarcoDeevil" target="_blank">
+      <a href="https://github.com/marcodeevi" target="_blank">
         <img src="images/github-mark.png" alt="GitHub" />
       </a>
     </socials>
