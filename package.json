@@ -1,18 +1,25 @@
 {
-  "name": "marcodeevi.github.io",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview --host",
-    "deploy": "npx gh-pages -d dist"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "gh-pages": "^6.1.1",
-    "svelte": "^4.2.8",
-    "vite": "^5.0.13"
-  }
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"dependencies": {
+		"preact": "^10.25.3",
+		"preact-iso": "^2.9.1",
+		"preact-render-to-string": "^6.5.13"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.9.3",
+		"eslint": "^8.57.1",
+		"eslint-config-preact": "^1.5.0",
+		"gh-pages": "^6.3.0",
+		"vite": "^6.0.4"
+	},
+	"eslintConfig": {
+		"extends": "preact"
+	}
 }
